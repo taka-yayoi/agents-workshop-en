@@ -114,7 +114,8 @@ def create_tools() -> List[BaseTool]:
                 tool_name="search_product_docs",
                 num_results=3, # Get 3 documents from VS
                 #num_results=1, # Get 1 document from VS
-                tool_description="Use this tool to search product documents."
+                tool_description="Use this tool to search product documents.",
+                disable_notice=True
             )
             tools.append(vs_tool)
             print(f"Added Vector Search tool: {VS_NAME}")
